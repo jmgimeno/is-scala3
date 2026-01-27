@@ -1,8 +1,8 @@
-## sbt project compiled with Scala 3
+## Basic Scala 3 playground
 
-### Usage
+Many examples extracted from:
 
-This is a normal sbt project. You can compile code with `sbt compile`, run it with `sbt run`, and `sbt console` will start a Scala 3 REPL.
+* [Scala 3 documentation](https://docs.scala-lang.org/scala3/book/introduction.html)
+* [Introduction to Scala 3 Videocourse (Alvin J. Alexander)](https://www.learnscala.dev/)
+* [Learn Scala 3 The Fast Way (Alvin J. Alexander)](https://alvinalexander.gumroad.com/l/learn-scala3-fast)
 
-For more information on the sbt-dotty plugin, see the
-[scala3-example-project](https://github.com/scala/scala3-example-project/blob/main/README.md).
