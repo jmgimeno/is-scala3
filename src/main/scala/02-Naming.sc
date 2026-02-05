@@ -1,4 +1,5 @@
-// Scala uses CamelCase naming convention
+// Scala uses PascalCase naming convention for classes / types
+// camelCase for variables / methods
 
 val firstName = "Alvin"
 class Person(val name: String)
@@ -12,4 +13,3 @@ val z: Long = 1         // explicit
 
 val a = "Hi"            // implicit
 val b: String = "Hi"    // explicit
-

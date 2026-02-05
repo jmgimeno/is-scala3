@@ -24,4 +24,5 @@ else
   println("more")
 end if
 
+// val rez = a < b ? a : b  // ternary operator in Java / C# / JavaScript   
 val rez = if a < b then a else b

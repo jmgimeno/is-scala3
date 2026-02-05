@@ -25,6 +25,17 @@ val evenOrOdd = i match
 // for is an expression
 
 val xs = List(1, 2, 3)
+
+// for (var x : xs) { ... }
+
+for (x <- xs) do println(x)
+
+// ys = [for x in xs: x * 2] in Python
+
+// ys = []
+// fpr x in xs:
+//   ys.append(x * 2)
+
 val ys = for x <- xs yield x * 2
 
 // try/catch is an expression
