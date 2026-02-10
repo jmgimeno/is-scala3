@@ -32,10 +32,16 @@ val d = Set(1, 1, 1, 2, 2, 2, 3)
 // Map
 
 val m1 = Map("a" -> 1, "b" -> 2)
+
+val m3 = Map(("a", 1), ("b", 2))
+
 val m2 = Map(
   "first_name" -> "Alvin",
   "last_name"  -> "Alexander"
 )
+
+// -> makes a pair
+1 -> 2
 
 // Range
 1 until 10

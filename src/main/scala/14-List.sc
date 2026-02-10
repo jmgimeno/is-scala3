@@ -1,8 +1,12 @@
 // Immutable and linear sequence
-
 // Single linked list !!
 
 val nums = List(1, 2, 3, 4, 5)
+val l1 = Nil
+val l2 = 5 :: l1
+val l3 = 4 :: l2
+// ...
+
 val num2 = 1 :: 2 :: 3 :: 4 :: 5 :: Nil
 
 nums(0)
@@ -16,6 +20,8 @@ for n <- nums do println(n)
 val names = List("bert", "ernie")
 val capNames = for name <- names yield name.capitalize
 
+names.map((s: String) => s.capitalize)
+names.map(s => s.capitalize)
 val capNames2 = names.map(_.capitalize)
 
 // "Updating" a List (creates a new List)
@@ -46,6 +52,11 @@ val a8 = List(1, 2) ::: a7
 def sum(xs: List[Int]): Int = xs match
   case Nil => 0
   case head :: tail => head + sum(tail)
+
+// Haskell:
+// sum :: [Int] -> Int
+  // sum [] = 0
+  // sum (x : xs) = x + sum(xs)
 
 // More examples: https://alvinalexander.com/scala/list-class-methods-examples-syntax/
 

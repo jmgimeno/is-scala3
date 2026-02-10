@@ -27,6 +27,8 @@ a(2) = 50
 a.update(0, 10)
 a.update(3, 40)
 
+a
+
 // Can use methods like:
 // append, appendAll,
 // insert, insertAll
@@ -50,6 +52,7 @@ d.dropRightInPlace(1)
 d.dropWhileInPlace(_ < 4)
 d.filterInPlace(_ > 4)
 d.mapInPlace(_ * 10)
+d.map(_ * 10)
 d.takeInPlace(4)
 d.takeRightInPlace(3)
 d.takeWhileInPlace(_ < 80)
@@ -59,7 +62,11 @@ d.takeWhileInPlace(_ < 80)
 val e = ArrayBuffer.range('a', 'h')
 e -= 'a'
 e --= Seq('b', 'c')
-e --= Set('d')
+
+// convert to an immutable collection
+
+e.toList
+e.toVector
 
 // Remove
 

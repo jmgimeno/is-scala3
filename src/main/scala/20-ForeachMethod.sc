@@ -23,3 +23,21 @@ ints.foreach { i =>
   println(x)
 }
 
+foreachGeneric(ints, i => {
+  val x = i * 20
+  println(x)
+})
+
+def foreachGeneric2[A](xs: Seq[A])(f: A => Unit): Unit =
+  for x <- xs do f(x)
+
+foreachGeneric2(ints)(i => {
+  val x = i * 20
+  println(x)
+})
+
+foreachGeneric2(ints) { i =>
+  val x = i * 20
+  println(x)
+}
+  

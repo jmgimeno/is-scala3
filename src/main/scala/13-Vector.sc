@@ -4,6 +4,8 @@
 
 val a = Vector(1, 2, 3)
 
+// Java: record Person(String name) {}
+
 case class Person(name: String)
 
 val people = Vector(
@@ -29,9 +31,12 @@ val capNames = for name <- names yield name.capitalize
 
 val v1 = Vector(4, 5, 6)
 val v2 = v1 :+ 7
-val v3 = v2 ++ Seq(8, 9)
+val v3 = v2 :++ Seq(8, 9)
 val v4 = 3 +: v3
 val v5 = Seq(1, 2) ++: v4
+
+val v6 = Vector(1, 2) ++ List(3, 4)
+val v7 = List(1, 2) ++ Vector(3, 4)
 
 // "Deleting" elements (creates a new Vector)
 

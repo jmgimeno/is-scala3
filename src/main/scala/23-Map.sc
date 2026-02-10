@@ -12,6 +12,7 @@ states("foo")
 states.get("AL")
 states.getOrElse("AX", "not found")
 
+
 // With for
 val ucMap = for
   (k, v) <- states
@@ -39,4 +40,12 @@ val states6 = states5.map((k, v) => (k, v.toUpperCase))
 // Sorting maps: https://alvinalexander.com/scala/how-to-sort-map-in-scala-key-value-sortby-sortwith
 // Choosing map implementation: https://alvinalexander.com/scala/how-to-choose-map-implementation-class-sorted-scala-cookbook
 
+
+// I can use mutable maps
+
+import scala.collection.mutable
+
+val mmap = mutable.Map[String, Int]()
+
+mmap += ("Patata" -> 15)
 
