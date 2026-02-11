@@ -40,4 +40,25 @@ foreachGeneric2(ints) { i =>
   val x = i * 20
   println(x)
 }
+
+// There is great flexibility for calling a function.
+
+foreachGeneric2(ints):
+  i =>
+    val x = i * 20
+    println(x)
+
+def factorial(n: Int): Int =
+  if n == 0 then 1 else n * factorial(n - 1)
   
+factorial(20)
+
+factorial {
+  val x = 10 + 10
+  x
+}
+
+factorial:
+  val x = 10 + 10
+  x
+

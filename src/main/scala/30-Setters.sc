@@ -38,4 +38,4 @@ class Employee2(var firstName: String, var lastName: String):
 end Employee2
 
 val emp2 = Employee2("Bob", "Johnson")
-emp2.salary = 6000
+emp2.salary = 6000 // emp2.setSalary(6000)

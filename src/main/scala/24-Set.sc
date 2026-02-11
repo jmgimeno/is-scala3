@@ -33,3 +33,13 @@ val c1 = b1 -- List(4, 5)
 val a2 = (1 to 10).toSet
 val b2 = a2.filter(_ > 3)
 val c2 = b2.take(2)
+
+// More examples
+
+val important = Set(1, 2, 5, 8)
+
+val elements = List(1, 2, 1, 3, 5, 8, 5, 1, 2, 5, 3, 6, 7)
+
+elements.filter(important)
+
+elements.filter((3 to 5).toSet)

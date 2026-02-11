@@ -10,7 +10,7 @@
 
 // Domain modeling using OOP principles
 
-// - Trains -> Interfaces
+// - Traits -> Interfaces
 // - Enums -> Sets of constants (e.g. directions)
 // - (Plain) Classes -> Data (mutable) + Behavior
 // - Objects -> For "static" data and behavior

@@ -37,6 +37,7 @@ end Pizza
 
 val p1 = Pizza()
 val p2 = Pizza(Medium, Regular)
+val p3 = Pizza(crustType = Thin, crustSize = Large)
 
 //p1.toppings
 
