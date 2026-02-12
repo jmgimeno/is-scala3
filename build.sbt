@@ -1,11 +1,12 @@
-name := "is-scala3"
-version := "0.1.0-SNAPSHOT"
+val scala3Version = "3.8.1"
 
-scalaVersion := "3.8.1"
-scalacOptions ++= List("-feature", "-deprecation", "-source:future")
+lazy val root = project
+  .in(file("."))
+  .settings(
+    name := "is-scala3",
+    version := "0.1.0-SNAPSHOT",
 
-libraryDependencies += "org.scalameta" %% "munit" % "1.2.2" % Test
+    scalaVersion := scala3Version,
 
-ThisBuild / githubWorkflowJavaVersions := Seq(JavaSpec.temurin("17"))
-ThisBuild / githubWorkflowBuild := Seq(WorkflowStep.Sbt(name = Some("Build project"), commands = List("test")))
-
+    libraryDependencies += "org.scalameta" %% "munit" % "1.2.2" % Test
+  )
