@@ -2,7 +2,7 @@
 // And the class is called the companion class
 // They can access each other's private members
 
-class Circle(val radius: Double):
+class Circle(private val radius: Double):
 
   import Circle.*
 

@@ -1,4 +1,4 @@
-// Sacala 3 blurs the line between funcions and methods (in Scala 2 there was a clearer distinction).
+// Scala 3 blurs the line between funcions and methods (in Scala 2 there was a clearer distinction).
 // - If inside a class/trait/object, we'll consider it a method
 // - Otherwise, we'll consider it a function
 

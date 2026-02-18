@@ -13,3 +13,5 @@ val addTen = sum(10)
 
 val finalResult = addTen(15)
 println(s"Final Result: $finalResult")
+
+List(1, 2, 3, 4).map(sum(25))
